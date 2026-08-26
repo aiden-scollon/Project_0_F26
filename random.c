@@ -8,7 +8,7 @@ void rand_string(char *buff, int size)
 
     for (int i = 0; i < size; ++i)
     {
-        char letter = letters[rand() % (num_letters + 1)];
+        char letter = letters[rand() % (num_letters)];
         buff[i] = letter; 
     }
     buff[size] = '\0';
